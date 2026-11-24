@@ -2,9 +2,16 @@
 
 ## AI-use declaration
 
-I used Claude to understand the value iteration method described in the lecture, as well as to set 
-up the repository, the PyCharm environment, and the virtual environment. All manual calculations and 
-their accompanying explanations for Part A were completed by me personally.
+## AI-use declaration
+
+I used Claude throughout this homework. Parts A and B: it explained the lecture's value iteration method, 
+helped set up the repository, PyCharm and the virtual environment, and cross-checked my Part A numbers; 
+I did the Part A paper calculations myself. Claude also helped me reason about the fixed FrozenLake policy 
+and wrote the first versions of the Part B code. Part C: Claude wrote the first versions of `floors.py`, 
+`solver.py`, `simulate.py` and `checks.py`. I ran all programs on my machine, compared the solver output 
+with my Part A paper results (they matched), and read the code to understand it. I also got Claude's help 
+with debugging and with the statistics for interpreting the batch results. The explanations in this file 
+are written by me, and all numbers come from my own runs. No other AI tools were used.
 
 ## Setup and reproduction
 
@@ -14,6 +21,10 @@ their accompanying explanations for Part A were completed by me personally.
 python -m venv .venv
 .venv\Scripts\Activate.ps1
 pip install gymnasium numpy pandas
+python part_b/run_b.py
+python part_c/solver.py 
+python part_c/simulate.py
+python part_c/checks.py
 
 ## Part A — Paper calculations
 
@@ -123,24 +134,99 @@ only measure how good a finished policy is.
 
 ## Part C — Custom solver
 
+Code: [floors.py](part_c/floors.py) (floor rules), [solver.py](part_c/solver.py)
+(transitions, value iteration, policy extraction), [simulate.py](part_c/simulate.py),
+[checks.py](part_c/checks.py). Floor rules are stored in a dictionary in
+`floors.py`, so a new floor is one new line there and `solver.py` is unchanged.
+
 ### Compare code with paper
 
-Show V1 and the requested V2 values. Explain discrepancies.
+The solver's V1 (all nonterminal tiles -1 except (1,3) = 10) equals my paper
+map. V2 from the code: (1,2) = 8, (1,3) = 10, (2,3) = 5.21, equal to my hand
+calculations. No discrepancies, so nothing had to be corrected.
 
 ### Values, policies and convergence
 
-Link both value/policy maps. Record iteration counts, final value changes and tie-breaking rule.
+Value maps: [outputs/value_maps.txt](outputs/value_maps.txt). Policy maps:
+[outputs/policy_maps.txt](outputs/policy_maps.txt).
+
+| Map | Iterations | Final max change | Converged |
+| --- | --- | --- | --- |
+| Part A map | 12 | 2.165e-07 | yes |
+| Extended map | 11 | 2.406e-07 | yes |
+
+The stopping threshold was 1e-6 and the 10,000-iteration safeguard was never
+reached. Tie-breaking: among actions whose Q-value is within 1e-9 of the best
+one, the first in the order up, right, down, left is chosen. No ties occurred
+in either map.
+
+Final values and policies (rows 1-3, columns 1-4):
+
+| Part A map V | | | | Policy | | | |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 4.200 | 8.000 | 10.000 | G | → | → | → | G |
+| 2.780 | # | 5.824 | H | ↑ | # | ↑ | H |
+| 1.536 | 2.818 | 4.242 | 2.818 | → | → | ↑ | ← |
+
+| Extended map V | | | | Policy | | | |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 4.200 | 8.000 | 10.000 | G | → | → | → | G |
+| 2.780 | # | 5.824 | H | ↑ | # | ↑ | H |
+| 1.502 | 2.818 | 4.242 | 2.818 | ↑ | → | ↑ | ← |
 
 ### Simulation results
 
+Policies computed by value iteration, simulated from S with episode seeds
+1000 × batch seed + i, 100-step limit. Episodes: [outputs/runs_c.csv](outputs/runs_c.csv).
+
 | Map | Batch seed | Goals /50 | Holes /50 | Time limits /50 | Mean steps | Mean discounted return |
 | --- | --- | --- | --- | --- | --- | --- |
+| Part A map | 11 | 47 | 3 | 0 | 5.04 | 2.230 |
+| Part A map | 22 | 44 | 6 | 0 | 4.96 | 1.442 |
+| Part A map | 33 | 42 | 8 | 0 | 4.88 | 0.970 |
+| Extended map | 11 | 50 | 0 | 0 | 5.00 | 1.502 |
+| Extended map | 22 | 50 | 0 | 0 | 5.00 | 1.502 |
+| Extended map | 33 | 50 | 0 | 0 | 5.00 | 1.502 |
 
 ### Explain your results
 
-Which values/actions changed with sand and water? Where did cost and risk matter? How do simulations relate to the computed values?
+**What changed with sand and water.** Only one action changed: at (3,1) the
+best move went from right (Part A map) to up (extended map). On the Part A map
+the cheapest route goes along the bottom row and then up through the ice tile.
+Putting sand (-2) at (3,2) makes that route more expensive: moving right from
+(3,1) is now worth -2 + 0.9·2.818 = 0.536, while moving up is worth
+-1 + 0.9·2.78 = 1.502. The new best route is S, up, up, right, right, right
+along the top row through the mud. The value at S fell from 1.536 to 1.502.
+Water (-5) did not change any value or action: the optimal policy never enters
+it, so it only acts as a deterrent. (3,4) is the only tile where it appears
+and nothing in the policy leads there.
+
+**Where cost and risk mattered.** On the Part A map the policy accepts risk to
+save cost: it goes through the ice. At the ice tile the best action is up. It
+reaches (1,3) with probability 0.8, stays on the ice with probability 0.1
+(slipping left into the wall) and enters the hole with probability 0.1
+(slipping right). Repeating after staying gives a hole probability of
+0.1 / 0.9 ≈ 11%, and the simulation gave 17 holes in 150 episodes (11.3%).
+On the extended map, the sand makes the ice route costlier than the mud route,
+which costs -3 for entering the mud but is deterministic, so the policy
+avoids the ice completely: 0 holes in 150 episodes. So the extra floor cost
+bought safety here.
+
+**Simulation versus computed values.** V*(S) is the expectation of the
+discounted return over an infinite horizon, whereas a simulation is a sample
+mean over 50 episodes truncated at 100 steps. The truncation is negligible
+(0.9^100 ≈ 2.7·10^-5). On the Part A map V*(S) = 1.536 and the batch means
+were 2.230, 1.442 and 0.970 (average 1.547): they scatter around V*(S) because
+a return is either about +3.5 (goal) or negative (hole), so 50 episodes are
+noisy. On the extended map the policy is fully deterministic, so every episode
+returns exactly 1.502 = V*(S); this is a special case, not a general rule.
 
 ### Rule checks
 
-Show boundary/wall behavior, slip probabilities, floor rewards and terminal handling.
+[outputs/checks.txt](outputs/checks.txt): 24 checks pass. They cover moves into
+walls and outside the map (the agent stays and receives the reward of the tile
+where it stays), ice probabilities 0.8/0.1/0.1 summing to 1 for all four
+actions, rewards for mud (-3), sand (-2), water (-5), goal (+10) and hole
+(-10), terminal values equal to 0, and an episode that stops at the goal with
+no rewards afterwards (return 1.502 matching a hand calculation).
 

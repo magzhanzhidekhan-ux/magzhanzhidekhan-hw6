@@ -1,0 +1,24 @@
+PASS: up from top row (0,0) stays at (0,0)
+PASS: left from left edge (1,0) stays
+PASS: down from bottom row (2,0) stays
+PASS: right into wall from (1,0) stays
+PASS: blocked move still pays reward of the tile where it ends (-1)
+PASS: blocked move on mud stays on mud and pays -3
+PASS: ice action U: probabilities sum to 1 ([0.8, 0.1, 0.1])
+PASS: ice action R: probabilities sum to 1 ([0.8, 0.1, 0.1])
+PASS: ice action D: probabilities sum to 1 ([0.8, 0.1, 0.1])
+PASS: ice action L: probabilities sum to 1 ([0.8, 0.1, 0.1])
+PASS: ice up: 0.8 / 0.1 / 0.1
+PASS: ice 'up', slip left hits wall -> stays on ice, reward -1
+PASS: ice 'up', slip right enters hole, reward -10
+PASS: non-ice tiles are deterministic
+PASS: mud reward -3
+PASS: sand reward -2
+PASS: water reward -5
+PASS: entering goal gives +10 (no extra floor cost)
+PASS: entering hole gives -10
+PASS: sand and water moves are deterministic
+PASS: terminal values are 0
+PASS: terminal values are 0
+PASS: terminals are not updated states
+PASS: path S,U,U,R,R,R: stops at goal after 5 steps, return 1.5020 (got 1.5020, goal)

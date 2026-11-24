@@ -1,0 +1,14 @@
+=== Part A map ===
+ →   →   →   G 
+ ↑   #   ↑   H 
+ →   →   ↑   ← 
+Tie-break: first of U, R, D, L among actions within 1e-9 of the best Q.
+Tied states (row, col, 1-based): {}
+
+=== Extended map ===
+ →   →   →   G 
+ ↑   #   ↑   H 
+ ↑   →   ↑   ← 
+Tie-break: first of U, R, D, L among actions within 1e-9 of the best Q.
+Tied states (row, col, 1-based): {}
+
