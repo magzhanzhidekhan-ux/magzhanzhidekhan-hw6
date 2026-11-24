@@ -1,0 +1,1473 @@
+===== slippery=False | fixed | first goal | episode seed 11000 =====
+start
+
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 1: action=down, reward=0
+  (Down)
+SFFF
+[41mF[0mHFH
+FFFH
+HFFG
+
+step 2: action=down, reward=0
+  (Down)
+SFFF
+FHFH
+[41mF[0mFFH
+HFFG
+
+step 3: action=right, reward=0
+  (Right)
+SFFF
+FHFH
+F[41mF[0mFH
+HFFG
+
+step 4: action=down, reward=0
+  (Down)
+SFFF
+FHFH
+FFFH
+H[41mF[0mFG
+
+step 5: action=right, reward=0
+  (Right)
+SFFF
+FHFH
+FFFH
+HF[41mF[0mG
+
+step 6: action=right, reward=1
+  (Right)
+SFFF
+FHFH
+FFFH
+HFF[41mG[0m
+
+
+===== slippery=False | random | first goal | episode seed 33006 =====
+start
+
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 1: action=left, reward=0
+  (Left)
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 2: action=down, reward=0
+  (Down)
+SFFF
+[41mF[0mHFH
+FFFH
+HFFG
+
+step 3: action=down, reward=0
+  (Down)
+SFFF
+FHFH
+[41mF[0mFFH
+HFFG
+
+step 4: action=right, reward=0
+  (Right)
+SFFF
+FHFH
+F[41mF[0mFH
+HFFG
+
+step 5: action=down, reward=0
+  (Down)
+SFFF
+FHFH
+FFFH
+H[41mF[0mFG
+
+step 6: action=right, reward=0
+  (Right)
+SFFF
+FHFH
+FFFH
+HF[41mF[0mG
+
+step 7: action=right, reward=1
+  (Right)
+SFFF
+FHFH
+FFFH
+HFF[41mG[0m
+
+
+===== slippery=False | random | first hole | episode seed 11000 =====
+start
+
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 1: action=up, reward=0
+  (Up)
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 2: action=right, reward=0
+  (Right)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+
+step 3: action=down, reward=0
+  (Down)
+SFFF
+F[41mH[0mFH
+FFFH
+HFFG
+
+
+===== slippery=True | fixed | first goal | episode seed 11020 =====
+start
+
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 1: action=down, reward=0
+  (Down)
+SFFF
+[41mF[0mHFH
+FFFH
+HFFG
+
+step 2: action=down, reward=0
+  (Down)
+SFFF
+[41mF[0mHFH
+FFFH
+HFFG
+
+step 3: action=down, reward=0
+  (Down)
+SFFF
+FHFH
+[41mF[0mFFH
+HFFG
+
+step 4: action=right, reward=0
+  (Right)
+SFFF
+FHFH
+F[41mF[0mFH
+HFFG
+
+step 5: action=down, reward=0
+  (Down)
+SFFF
+FHFH
+FFFH
+H[41mF[0mFG
+
+step 6: action=right, reward=0
+  (Right)
+SFFF
+FHFH
+FFFH
+H[41mF[0mFG
+
+step 7: action=right, reward=0
+  (Right)
+SFFF
+FHFH
+F[41mF[0mFH
+HFFG
+
+step 8: action=down, reward=0
+  (Down)
+SFFF
+FHFH
+FF[41mF[0mH
+HFFG
+
+step 9: action=left, reward=0
+  (Left)
+SFFF
+FH[41mF[0mH
+FFFH
+HFFG
+
+step 10: action=left, reward=0
+  (Left)
+SFFF
+FHFH
+FF[41mF[0mH
+HFFG
+
+step 11: action=left, reward=0
+  (Left)
+SFFF
+FHFH
+F[41mF[0mFH
+HFFG
+
+step 12: action=down, reward=0
+  (Down)
+SFFF
+FHFH
+FF[41mF[0mH
+HFFG
+
+step 13: action=left, reward=0
+  (Left)
+SFFF
+FHFH
+F[41mF[0mFH
+HFFG
+
+step 14: action=down, reward=0
+  (Down)
+SFFF
+FHFH
+FFFH
+H[41mF[0mFG
+
+step 15: action=right, reward=0
+  (Right)
+SFFF
+FHFH
+FFFH
+HF[41mF[0mG
+
+step 16: action=right, reward=0
+  (Right)
+SFFF
+FHFH
+FF[41mF[0mH
+HFFG
+
+step 17: action=left, reward=0
+  (Left)
+SFFF
+FHFH
+FFFH
+HF[41mF[0mG
+
+step 18: action=right, reward=0
+  (Right)
+SFFF
+FHFH
+FFFH
+HF[41mF[0mG
+
+step 19: action=right, reward=0
+  (Right)
+SFFF
+FHFH
+FF[41mF[0mH
+HFFG
+
+step 20: action=left, reward=0
+  (Left)
+SFFF
+FHFH
+F[41mF[0mFH
+HFFG
+
+step 21: action=down, reward=0
+  (Down)
+SFFF
+FHFH
+FF[41mF[0mH
+HFFG
+
+step 22: action=left, reward=0
+  (Left)
+SFFF
+FH[41mF[0mH
+FFFH
+HFFG
+
+step 23: action=left, reward=0
+  (Left)
+SFFF
+FHFH
+FF[41mF[0mH
+HFFG
+
+step 24: action=left, reward=0
+  (Left)
+SFFF
+FH[41mF[0mH
+FFFH
+HFFG
+
+step 25: action=left, reward=0
+  (Left)
+SFFF
+FHFH
+FF[41mF[0mH
+HFFG
+
+step 26: action=left, reward=0
+  (Left)
+SFFF
+FHFH
+F[41mF[0mFH
+HFFG
+
+step 27: action=down, reward=0
+  (Down)
+SFFF
+FHFH
+FF[41mF[0mH
+HFFG
+
+step 28: action=left, reward=0
+  (Left)
+SFFF
+FHFH
+F[41mF[0mFH
+HFFG
+
+step 29: action=down, reward=0
+  (Down)
+SFFF
+FHFH
+FFFH
+H[41mF[0mFG
+
+step 30: action=right, reward=0
+  (Right)
+SFFF
+FHFH
+FFFH
+H[41mF[0mFG
+
+step 31: action=right, reward=0
+  (Right)
+SFFF
+FHFH
+FFFH
+H[41mF[0mFG
+
+step 32: action=right, reward=0
+  (Right)
+SFFF
+FHFH
+FFFH
+HF[41mF[0mG
+
+step 33: action=right, reward=0
+  (Right)
+SFFF
+FHFH
+FFFH
+HF[41mF[0mG
+
+step 34: action=right, reward=1
+  (Right)
+SFFF
+FHFH
+FFFH
+HFF[41mG[0m
+
+
+===== slippery=True | fixed | first hole | episode seed 11000 =====
+start
+
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 1: action=down, reward=0
+  (Down)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+
+step 2: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 3: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 4: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 5: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 6: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 7: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 8: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 9: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 10: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 11: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 12: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 13: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 14: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 15: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 16: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 17: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 18: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 19: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 20: action=up, reward=0
+  (Up)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+
+step 21: action=up, reward=0
+  (Up)
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 22: action=down, reward=0
+  (Down)
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 23: action=down, reward=0
+  (Down)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+
+step 24: action=up, reward=0
+  (Up)
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 25: action=down, reward=0
+  (Down)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+
+step 26: action=up, reward=0
+  (Up)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+
+step 27: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 28: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 29: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 30: action=up, reward=0
+  (Up)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+
+step 31: action=up, reward=0
+  (Up)
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 32: action=down, reward=0
+  (Down)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+
+step 33: action=up, reward=0
+  (Up)
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 34: action=down, reward=0
+  (Down)
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 35: action=down, reward=0
+  (Down)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+
+step 36: action=up, reward=0
+  (Up)
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 37: action=down, reward=0
+  (Down)
+SFFF
+[41mF[0mHFH
+FFFH
+HFFG
+
+step 38: action=down, reward=0
+  (Down)
+SFFF
+F[41mH[0mFH
+FFFH
+HFFG
+
+
+===== slippery=True | fixed | first time limit | episode seed 11011 =====
+start
+
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 1: action=down, reward=0
+  (Down)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+
+step 2: action=up, reward=0
+  (Up)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+
+step 3: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 4: action=up, reward=0
+  (Up)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+
+step 5: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 6: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 7: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 8: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 9: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 10: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 11: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 12: action=up, reward=0
+  (Up)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+
+step 13: action=up, reward=0
+  (Up)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+
+step 14: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 15: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 16: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 17: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 18: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 19: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 20: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 21: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 22: action=up, reward=0
+  (Up)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+
+step 23: action=up, reward=0
+  (Up)
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 24: action=down, reward=0
+  (Down)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+
+step 25: action=up, reward=0
+  (Up)
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 26: action=down, reward=0
+  (Down)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+
+step 27: action=up, reward=0
+  (Up)
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 28: action=down, reward=0
+  (Down)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+
+step 29: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 30: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 31: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 32: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 33: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 34: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 35: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 36: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 37: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 38: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 39: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 40: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 41: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 42: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 43: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 44: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 45: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 46: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 47: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 48: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 49: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 50: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 51: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 52: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 53: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 54: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 55: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 56: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 57: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 58: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 59: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 60: action=up, reward=0
+  (Up)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+
+step 61: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 62: action=up, reward=0
+  (Up)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+
+step 63: action=up, reward=0
+  (Up)
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 64: action=down, reward=0
+  (Down)
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 65: action=down, reward=0
+  (Down)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+
+step 66: action=up, reward=0
+  (Up)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+
+step 67: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 68: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 69: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 70: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 71: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 72: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 73: action=up, reward=0
+  (Up)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+
+step 74: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 75: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 76: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 77: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 78: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 79: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 80: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 81: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 82: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 83: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 84: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 85: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 86: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 87: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 88: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 89: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 90: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 91: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 92: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 93: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 94: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 95: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 96: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 97: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 98: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 99: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 100: action=up, reward=0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+
+===== slippery=True | random | first goal | episode seed 22015 =====
+start
+
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 1: action=up, reward=0
+  (Up)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+
+step 2: action=up, reward=0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 3: action=down, reward=0
+  (Down)
+SFFF
+FH[41mF[0mH
+FFFH
+HFFG
+
+step 4: action=left, reward=0
+  (Left)
+SFFF
+FHFH
+FF[41mF[0mH
+HFFG
+
+step 5: action=down, reward=0
+  (Down)
+SFFF
+FHFH
+FFFH
+HF[41mF[0mG
+
+step 6: action=left, reward=0
+  (Left)
+SFFF
+FHFH
+FFFH
+H[41mF[0mFG
+
+step 7: action=right, reward=0
+  (Right)
+SFFF
+FHFH
+FFFH
+HF[41mF[0mG
+
+step 8: action=right, reward=1
+  (Right)
+SFFF
+FHFH
+FFFH
+HFF[41mG[0m
+
+
+===== slippery=True | random | first hole | episode seed 11000 =====
+start
+
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 1: action=up, reward=0
+  (Up)
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 2: action=right, reward=0
+  (Right)
+SFFF
+[41mF[0mHFH
+FFFH
+HFFG
+
+step 3: action=down, reward=0
+  (Down)
+SFFF
+[41mF[0mHFH
+FFFH
+HFFG
+
+step 4: action=up, reward=0
+  (Up)
+SFFF
+F[41mH[0mFH
+FFFH
+HFFG
+
+
+Outcomes never observed: [('slippery=False', 'random', 'time limit'), ('slippery=False', 'fixed', 'hole'), ('slippery=False', 'fixed', 'time limit'), ('slippery=True', 'random', 'time limit')]
