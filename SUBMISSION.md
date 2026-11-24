@@ -2,15 +2,31 @@
 
 ## AI-use declaration
 
-Which tools did you use, and for what?
+I used Claude to understand the value iteration method described in the lecture, as well as to set 
+up the repository, the PyCharm environment, and the virtual environment. All manual calculations and 
+their accompanying explanations for Part A were completed by me personally.
 
 ## Setup and reproduction
 
-Record dependency versions, installation commands and exact run commands.
+- Python 3.12, virtual environment `.venv`
+- Versions: see [outputs/versions.txt](outputs/versions.txt)
+- Install:
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+pip install gymnasium numpy pandas
 
 ## Part A — Paper calculations
 
-Link your scan/photo here. Include V1 for every nonterminal tile, the three requested V2 calculations, best-action arrows/ties and your explanation. Commit this part before coding.
+Scans of my handwritten work (MDP description, V1 map, V2 calculations at
+(1,2), (1,3), (2,3), best-action arrows, and why two rounds are not enough):
+
+- [partA/img.png]
+- [partA/img_1.png]
+- [partA/img_2.png]
+
+Summary: V2(1,2) = 8 (right), V2(1,3) = 10 (right), V2(2,3) = 5.21 (up).
+No ties at these positions. Two rounds only look two steps ahead, so the
+values have not converged and the policy can still change in later rounds.
 
 ## Part B — FrozenLake
 
